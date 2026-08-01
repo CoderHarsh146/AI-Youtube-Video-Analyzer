@@ -10,32 +10,70 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+.stApp{
+    background-color:#0E1117;
+    color:#FAFAFA;
+}
+
 .main-title{
     text-align:center;
     font-size:42px;
     font-weight:800;
-    color:#ff4b4b;
+    color:#FF4B4B;
 }
 
 .sub-title{
     text-align:center;
-    color:#9ca3af;
+    color:#B0B3B8;
     font-size:18px;
     margin-bottom:30px;
+}
+
+section[data-testid="stSidebar"]{
+    background-color:#161B22;
+}
+
+section[data-testid="stSidebar"] *{
+    color:#E8EAED !important;
+}
+
+div[data-testid="stTextInput"] input{
+    background-color:#1E1E1E;
+    color:white;
+    border:1px solid #444;
+    border-radius:10px;
 }
 
 .stButton>button{
     width:100%;
     height:50px;
-    border-radius:12px;
+    border-radius:10px;
     font-size:18px;
     font-weight:600;
+    background:#FF4B4B;
+    color:white;
+    border:none;
+}
+
+.stButton>button:hover{
+    background:#E63939;
+    color:white;
+}
+
+div[data-testid="stAlert"]{
+    border-radius:10px;
 }
 
 .result{
+    background:#1E1E1E;
     border:1px solid #333;
     border-radius:12px;
     padding:20px;
+    color:white;
+}
+
+hr{
+    border:1px solid #2D333B;
 }
 
 </style>
@@ -98,7 +136,7 @@ if st.button("🚀 Analyze Video"):
                     f"Analyze this YouTube video:\n{url}"
                 )
 
-                st.success("Analysis Complete")
+                st.success("✅ Analysis Complete")
 
                 st.markdown("---")
 
@@ -108,4 +146,4 @@ if st.button("🚀 Analyze Video"):
                     st.markdown(str(response))
 
             except Exception as e:
-                st.error(str(e))
+                st.error(f"❌ {e}")

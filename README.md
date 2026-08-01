@@ -2,10 +2,10 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Agno](https://img.shields.io/badge/Framework-Agno-purple)
+![Groq](https://img.shields.io/badge/Powered%20by-Groq-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-# 🎥 AI Youtube Video Analyzer
 
 An AI-powered YouTube Video Analyzer built using **Agno**, **OpenAI**, and **Streamlit**.
 

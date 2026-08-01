@@ -119,7 +119,12 @@ url = st.text_input(
     placeholder="https://www.youtube.com/watch?v=..."
 )
 
-if st.button("🚀 Analyze Video"):
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    analyze = st.button("🚀 Analyze Video", use_container_width=True)
+
+if analyze:
 
     if not url.strip():
         st.warning("Please enter a YouTube video URL.")

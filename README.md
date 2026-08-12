@@ -34,7 +34,7 @@ Simply paste a YouTube video URL and get a detailed AI-generated analysis, inclu
 - Python
 - Streamlit
 - Agno Framework
-- OpenAI Responses API
+- GROQ API
 - YouTube Tools
 
 ---
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 Create a `.env` file and add your API key:
 
 ```env
-OPENAI_API_KEY=your_api_key_here
+GROQ_API_KEY=your_api_key_here
 ```
 
 Run the application:
